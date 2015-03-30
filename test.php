@@ -1,8 +1,8 @@
 <?php
 
 include('core/init.inc.php');
-header('Content-Type: text/plain');
 
-print_r(read_csv('test.csv'));
+
+print_r(read_csv('hd2013.csv'));
 
 ?>
