@@ -22,6 +22,8 @@ class Import
 		while (($data = fgetcsv($datafile)) !== FALSE) 
 		{
 			print_r ($data);
+			
+			
 		/* echo "<table border='1' style='width:50%'>";
 		echo "<tr>";
 			echo "<td>";
