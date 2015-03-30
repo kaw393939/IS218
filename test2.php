@@ -22,12 +22,14 @@ function read_csv($filename){
 		//print_r($rows);
 	}
 	
+	$removedRow = array_shift($rows);
+	
 	
 print("<table id='hor-zebra'>");	
 //print("<tr><th colspan =2> Institution Name </th></tr>");
 
 print("<th scope='col'>Institution Name</th>");	
-	array_shift($rows);
+	
 	foreach ($rows as $row){
 		$data = ($row);
 		//echo $data[0];
@@ -57,7 +59,7 @@ print("<th scope='col'>Institution Name</th>");
 #######-------------------End of read_csv function-------------------------------#######
 
 
-//print_r(read_csv('test.csv'));
-print_r(read_csv('hd2013.csv'));
+print_r(read_csv('test.csv'));
+//print_r(read_csv('hd2013.csv'));
 //read_csv('test.csv');
 ?>
