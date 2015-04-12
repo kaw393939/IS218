@@ -91,9 +91,8 @@ print("<th scope='col'>Institution Name</th>");
 			echo "</table>";
 			
 			
-			//echo "The University ID is: $UNITID \n";
-		}
-		
+}
+	
 	} // foreach ($combined as $school ends)
 	//print_r($rows);
 	//return $rows;
