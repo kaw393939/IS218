@@ -1,7 +1,7 @@
 <?php
 
 //include('core/init.inc.php');
-header('Content-Type: text/plain');
+//header('Content-Type: text/plain');
 
 
 function read_csv($filename){
@@ -56,7 +56,7 @@ $data_file = read_csv('test.csv');
 //-------------the HTML table to show the users starts below----------------------------
 
 //print_r($data_file[0]);
-$mehul = ($data_file[0]);
+$mehul = ($data_file);
 print_r($mehul);
 
 echo $rows[0];
@@ -67,7 +67,7 @@ $i = 0;
 		echo "<table border='1' style='width:50%'>";
 		echo "<tr>";
 			echo "<td>";
-			//echo "<a href=?UNITID=".$data[0].">".$data[1]."</a>";
+			echo "<a href=?UNITID=".$mehul[UNITID].">".$mehul[INSTNM]."</a>";
 			//echo "$_GET[".$myArrayLength."]";
 			
 		$i++;

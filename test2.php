@@ -24,6 +24,17 @@ function read_csv($filename){
 	
 	$removedRow = array_shift($rows);
 	
+	//Get the UNITID from the URL
+	if (isset($_REQUEST['UNITID'])) {
+    $UNITID = $_REQUEST['UNITID'];
+  } else {
+    $UNITID = "";
+  }
+  
+  echo $UNITID;
+  
+  //Stuff to do once I have the UNITID
+	
 	
 print("<table id='hor-zebra'>");	
 //print("<tr><th colspan =2> Institution Name </th></tr>");
