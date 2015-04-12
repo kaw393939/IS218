@@ -3,13 +3,6 @@ body
 	line-height: 1.6em;
 }
 
-
-#hor-zebra.center {
-    margin-left:auto; 
-    margin-right:auto;
-  }
-  
-
 #hor-zebra
 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
@@ -18,7 +11,6 @@ body
 	width: 480px;
 	text-align: left;
 	border-collapse: collapse;
-	
 }
 #hor-zebra th
 {

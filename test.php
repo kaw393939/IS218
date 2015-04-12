@@ -3,7 +3,7 @@
 include('core/init.inc.php');
 
 
-print_r(read_csv('hd2013.csv'));
+print_r(read_csv('test.csv'));
 
 ?>
 
@@ -23,7 +23,7 @@ class Import
     }
     protected function __construct()
     {
-   		print_r(read_csv('hd2013.csv'));
+   		print_r(read_csv('test.csv'));
 		
     }
 }

@@ -5,7 +5,7 @@
 <?php
 
 //include('core/init.inc.php');
-//header('Content-Type: text/plain');
+header('Content-Type: text/plain');
 
 
 function read_csv($filename){
@@ -23,6 +23,9 @@ function read_csv($filename){
 	}
 	
 	$removedRow = array_shift($rows);
+	
+	//var_dump ($removedRow);
+	//print_r($rows);
 	
 	//Get the UNITID from the URL
 	if (isset($_REQUEST['UNITID'])) {
@@ -44,6 +47,7 @@ print("<th scope='col'>Institution Name</th>");
 	foreach ($rows as $row){
 		$data = ($row);
 		//echo $data[0];
+		print_r($data);
 	
 	echo "<tbody>";	
 		echo "<tr class='odd'>";
