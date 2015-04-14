@@ -5,7 +5,7 @@
 <?php
 
 //include('core/init.inc.php');
-header('Content-Type: text/plain');
+//header('Content-Type: text/plain');
 
 
 function read_csv($filename){
@@ -47,7 +47,7 @@ print("<th scope='col'>Institution Name</th>");
 	foreach ($rows as $row){
 		$data = ($row);
 		//echo $data[0];
-		print_r($data);
+		//print_r($data);
 	
 	echo "<tbody>";	
 		echo "<tr class='odd'>";

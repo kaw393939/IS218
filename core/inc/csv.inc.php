@@ -68,7 +68,7 @@ print("<th scope='col'>Institution Name</th>");
 		//print_r($school);
 		//print_r($school[UNITID]);
 		
-		if (($school[UNITID]) == $UNITID){
+		if (($school['UNITID']) == $UNITID){
 			
 			//print_r ($school);
 			
