@@ -9,15 +9,42 @@ class infoPage {
 		echo "<table id='hor-zebra' class='center'>";
 	foreach ($info as $key => $value) {
 		
-		if ($key == 'WEBADDR'){
+		if ($key == 'CITY'){
+			echo "<tbody>";	
+			echo "<tr class='odd'>";
+			echo "<td><b>$key</b></td>";
+			echo "<td><a href='http://en.wikipedia.org/w/index.php?search=$value'>$value</a></td>";
+			echo "</tr>";
+			echo "</tbody>";
+			
+		}elseif ($key == 'GENTELE'){
+			echo "<tbody>";	
+			echo "<tr class='odd'>";
+			echo "<td><b>$key</b></td>";
+			echo "<td>";
+			echo "(".substr($value, 0, 3).") ".substr($value, 3, 3)."-".substr($value,6);
+			echo "</td>";
+			echo "</tr>";
+			echo "</tbody>";
+			
+		}elseif ($key == 'FAXTELE'){
+			echo "<tbody>";	
+			echo "<tr class='odd'>";
+			echo "<td><b>$key</b></td>";
+			echo "<td>";
+			echo "(".substr($value, 0, 3).") ".substr($value, 3, 3)."-".substr($value,6);
+			echo "</td>";
+			echo "</tr>";
+			echo "</tbody>";
+			
+		}elseif ($key == 'WEBADDR'){
 			echo "<tbody>";	
 			echo "<tr class='odd'>";
 			echo "<td><b>$key</b></td>";
 			echo "<td><a href='http://$value'>$value</a></td>";
 			echo "</tr>";
 			echo "</tbody>";	
-			
-			
+		
 		}elseif($key == 'ADMINURL' ){
 			echo "<tbody>";	
 			echo "<tr class='odd'>";
