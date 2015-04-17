@@ -13,9 +13,19 @@ class infoPage {
 			echo "<tbody>";	
 			echo "<tr class='odd'>";
 			echo "<td><b>$key</b></td>";
-			echo "<td><a href='http://en.wikipedia.org/w/index.php?search=$value'>$value</a></td>";
+			//echo "<td><a href='http://en.wikipedia.org/w/index.php?search=$value'>$value</a></td>";
+			echo "<td><a href='https://www.google.com/search?q=$value, City'>$value</a></td>";
 			echo "</tr>";
 			echo "</tbody>";
+			
+		}elseif ($key == 'ZIP'){
+			echo "<tbody>";	
+			echo "<tr class='odd'>";
+			echo "<td><b>$key</b></td>";
+			echo "<td><a href='https://www.google.com/maps?q=$value'>$value</a></td>";
+			echo "</tr>";
+			echo "</tbody>";	
+			
 			
 		}elseif ($key == 'GENTELE'){
 			echo "<tbody>";	
