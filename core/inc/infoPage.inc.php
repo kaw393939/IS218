@@ -90,10 +90,7 @@ class infoPage {
 			echo "<td>$value</td>";
 			echo "</tr>";
 			echo "</tbody>";
-			
 		}
-		
-	
 	}
 		echo "</table>";	
 }
