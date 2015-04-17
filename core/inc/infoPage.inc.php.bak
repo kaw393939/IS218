@@ -1,0 +1,23 @@
+<?php
+
+class infoPage {
+	
+	public function printPage() {
+	$somewhere = singleton::getInstance();
+	$info = $somewhere[$_REQUEST['UNITID']];
+	
+		echo "<table id='hor-zebra' class='center'>";
+	foreach ($info as $key => $value) {
+		
+		echo "<tbody>";	
+		echo "<tr class='odd'>";
+		echo "<td><b>$key</b></td>";
+		echo "<td>$value</td>";
+		echo "</tr>";
+		echo "</tbody>";	
+	}
+		echo "</table>";	
+}
+}
+
+?>
