@@ -20,7 +20,6 @@ class mainPage {
 		echo "</tbody>";
 	}
 	echo "</table>";
-	//$INFO = $somwhere[$_REQUEST['UCID']];
 }
 	
 }
