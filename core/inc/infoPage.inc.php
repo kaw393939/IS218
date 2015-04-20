@@ -7,6 +7,7 @@ class infoPage {
 	$info = $somewhere[$_REQUEST['UNITID']];
 	
 		echo "<table id='hor-zebra' class='center'>";
+		// Adding target="_blank" makes the link open in a new tab for Firefox and Chrome.
 	foreach ($info as $key => $value) {
 		
 		if ($key == 'CITY'){
@@ -14,7 +15,7 @@ class infoPage {
 			echo "<tr class='odd'>";
 			echo "<td><b>$key</b></td>";
 			//echo "<td><a href='http://en.wikipedia.org/w/index.php?search=$value'>$value</a></td>";
-			echo "<td><a href='https://www.google.com/search?q=$value, City'>$value</a></td>";
+			echo "<td><a href='https://www.google.com/search?q=$value, City' target='_blank'>$value</a></td>";
 			echo "</tr>";
 			echo "</tbody>";
 			
@@ -22,7 +23,7 @@ class infoPage {
 			echo "<tbody>";	
 			echo "<tr class='odd'>";
 			echo "<td><b>$key</b></td>";
-			echo "<td><a href='https://www.google.com/maps?q=$value'>$value</a></td>";
+			echo "<td><a href='https://www.google.com/maps?q=$value' target='_blank'>$value</a></td>";
 			echo "</tr>";
 			echo "</tbody>";	
 			
@@ -51,7 +52,7 @@ class infoPage {
 			echo "<tbody>";	
 			echo "<tr class='odd'>";
 			echo "<td><b>$key</b></td>";
-			echo "<td><a href='http://$value'>$value</a></td>";
+			echo "<td><a href='http://$value' target='_blank'>$value</a></td>";
 			echo "</tr>";
 			echo "</tbody>";	
 		
@@ -59,28 +60,28 @@ class infoPage {
 			echo "<tbody>";	
 			echo "<tr class='odd'>";
 			echo "<td><b>$key</b></td>";
-			echo "<td><a href='http://$value'>$value</a></td>";
+			echo "<td><a href='http://$value' target='_blank'>$value</a></td>";
 			echo "</tr>";
 			echo "</tbody>";	
 		}elseif($key == 'FAIDURL' ){
 			echo "<tbody>";	
 			echo "<tr class='odd'>";
 			echo "<td><b>$key</b></td>";
-			echo "<td><a href='http://$value'>$value</a></td>";
+			echo "<td><a href='http://$value' target='_blank'>$value</a></td>";
 			echo "</tr>";
 			echo "</tbody>";	
 		}elseif($key == 'APPLURL' ){
 			echo "<tbody>";	
 			echo "<tr class='odd'>";
 			echo "<td><b>$key</b></td>";
-			echo "<td><a href='http://$value'>$value</a></td>";
+			echo "<td><a href='http://$value' target='_blank'>$value</a></td>";
 			echo "</tr>";
 			echo "</tbody>";	
 		}elseif($key == 'NPRICURL' ){
 			echo "<tbody>";	
 			echo "<tr class='odd'>";
 			echo "<td><b>$key</b></td>";
-			echo "<td><a href='http://$value'>$value</a></td>";
+			echo "<td><a href='http://$value' target='_blank'>$value</a></td>";
 			echo "</tr>";
 			echo "</tbody>";	
 		}else{
